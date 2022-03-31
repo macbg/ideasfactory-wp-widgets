@@ -3,10 +3,10 @@
 	"apiVersion": 2,
 	"name": "create-block/gutenpride",
 	"version": "0.1.0",
-	"title": "Gutenpride",
+	"title": "Join us banner",
 	"category": "widgets",
 	"icon": "flag",
-	"description": "A Gutenberg block to show your pride! This block enables you to type text and style it with the color font Gilbert from Type with Pride.",
+	"description": "A banner with text area and one button.",
 	"attributes": {
 		"message": {
 			"type": "string",
@@ -20,7 +20,12 @@
 		}
 	},
 	"supports": {
-		"html": false
+		"html": false,
+		"color": {
+			"background": true,
+			"text": true,
+			"link": false
+		}
 	},
 	"textdomain": "gutenpride",
 	"editorScript": "file:./index.js",

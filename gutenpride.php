@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name:       Ideas Factory Widgets
- * Description:       A Gutenberg block to show your pride! This block enables you to type text and style it with the color font Gilbert from Type with Pride.
+ * Description:       A set of Gutenberg blocks designed for Ideas Factory.
  * Version:           0.1.0
  * Requires at least: 5.8
  * Requires PHP:      7.0
- * Author:            The WordPress Contributors
+ * Author:            Martina Peeva, Krasimir Markov
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       gutenpride
