@@ -25,25 +25,13 @@ import { useBlockProps } from '@wordpress/block-editor';
  *
  * @return {WPElement} Element to render.
  */
-/*export default function Edit({ attributes, setAttributes }) {
-	const blockProps = useBlockProps();
-	return (
-		<TextControl
-			{...blockProps}
-			value={attributes.message}
-			onChange={(val) => setAttributes({ message: val })}
-		/>
-	);
-}*/
-
 export default function Edit({ attributes, setAttributes }) {
 	const blockProps = useBlockProps();
-	// <div class="wp-block-cgb-block-join-us-banner">
 	return (
 		<div {...blockProps}>
 			<div class="box">
 				<TextControl value={attributes.message} onChange={(val) => setAttributes({ message: val })} />
-				<button type="button"><TextControl value={attributes.buttonText} onChange={(val) => setAttributes({ buttonText: val })} /></button>
+				<a><TextControl value={attributes.buttonText} onChange={(val) => setAttributes({ buttonText: val })} /></a>
 			</div>
 		</div>
 	);

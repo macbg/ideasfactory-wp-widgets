@@ -17,7 +17,7 @@
 		"buttonText": {
 			"type": "string",
 			"source": "text",
-			"selector": "button",
+			"selector": "a",
 			"default": "Включи се"
 		},
 		"style": {
@@ -25,7 +25,8 @@
 			"default": {
 				"color": {
 					"background": "#f37a56",
-					"text": "#ffffff"
+					"text": "#ffffff",
+					"link": "#cb4231"
 				}
 			}
 		}

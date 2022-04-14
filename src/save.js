@@ -28,7 +28,7 @@ export default function save({ attributes }) {
 		<div {...blockProps}>
 			<div class="box">
 				<div class="text-content">{attributes.message}</div>
-				<button type="button">{attributes.buttonText}</button>
+				<a>{attributes.buttonText}</a>
 			</div>
 		</div>
 	);
