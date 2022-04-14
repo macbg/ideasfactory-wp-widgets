@@ -38,11 +38,12 @@ import { useBlockProps } from '@wordpress/block-editor';
 
 export default function Edit({ attributes, setAttributes }) {
 	const blockProps = useBlockProps();
+	// <div class="wp-block-cgb-block-join-us-banner">
 	return (
-		<div class="wp-block-cgb-block-join-us-banner">
+		<div {...blockProps}>
 			<div class="box">
-				<TextControl {...blockProps} value={attributes.message} onChange={(val) => setAttributes({ message: val })} />
-				<button type="button"><TextControl {...blockProps} value={attributes.buttonText} onChange={(val) => setAttributes({ buttonText: val })} /></button>
+				<TextControl value={attributes.message} onChange={(val) => setAttributes({ message: val })} />
+				<button type="button"><TextControl value={attributes.buttonText} onChange={(val) => setAttributes({ buttonText: val })} /></button>
 			</div>
 		</div>
 	);
