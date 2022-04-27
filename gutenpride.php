@@ -10,7 +10,7 @@
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       gutenpride
  *
- * @package           create-block
+ * @package           ideas-factory
  */
 
 /**
@@ -20,7 +20,7 @@
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function create_block_gutenpride_block_init() {
+function ideas_factory_gutenpride_block_init() {
 	register_block_type( __DIR__ . '/build' );
 }
-add_action( 'init', 'create_block_gutenpride_block_init' );
+add_action( 'init', 'ideas_factory_gutenpride_block_init' );
