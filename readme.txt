@@ -1,4 +1,4 @@
-=== Gutenpride ===
+=== Ideas Factory ===
 Contributors:      The WordPress Contributors
 Tags:              block
 Tested up to:      5.9
