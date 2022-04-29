@@ -27,7 +27,7 @@ import save from './save';
  *
  * @see https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
  */
-registerBlockType('ideas-factory/gutenpride', {
+registerBlockType('ideas-factory/join-us-banner', {
 	/**
 	 * Used to construct a preview for the block to be shown in the block inserter.
 	 */

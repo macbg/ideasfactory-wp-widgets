@@ -1,7 +1,7 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
-	"name": "ideas-factory/gutenpride",
+	"name": "ideas-factory/join-us-banner",
 	"version": "0.1.0",
 	"title": "Join us banner",
 	"category": "widgets",
