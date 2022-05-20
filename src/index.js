@@ -29,20 +29,33 @@ import joinUsBannerSave from './join-us-banner/save';
  */
 registerBlockType('ideas-factory/join-us-banner', {
 	/**
-	 * Used to construct a preview for the block to be shown in the block inserter.
-	 */
-	example: {
-		attributes: {
-			message: 'Banner message',
-			buttonText: 'Button text'
-		},
-	},
-	/**
-	 * @see ./edit.js
+	 * @see ./join-us-banner/edit.js
 	 */
 	edit: joinUsBannerEdit,
 	/**
-	 * @see ./save.js
+	 * @see ./join-us-banner/save.js
 	 */
 	save: joinUsBannerSave,
+});
+
+/**
+ * Internal dependencies
+ */
+import headerEdit from './header/edit';
+import headerSave from './header/save';
+
+/**
+ * Every block starts by registering a new block type definition.
+ *
+ * @see https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
+ */
+registerBlockType('ideas-factory/header', {
+	/**
+	 * @see ./header/edit.js
+	 */
+	edit: headerEdit,
+	/**
+	 * @see ./header/save.js
+	 */
+	save: headerSave,
 });

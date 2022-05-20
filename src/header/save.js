@@ -25,7 +25,7 @@ export default function save({ attributes }) {
 	const blockProps = useBlockProps.save();
 	//<div class="wp-block-cgb-block-join-us-banner">
 	return (
-		<div {...blockProps}>
+		<div {...blockProps}>shmeizer
 			<div class="box">
 				<div class="text-content">{attributes.message}</div>
 				<a>{attributes.buttonText}</a>
