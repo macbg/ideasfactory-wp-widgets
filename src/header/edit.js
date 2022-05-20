@@ -11,7 +11,11 @@ import { TextControl } from '@wordpress/components';
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
-import { useBlockProps } from '@wordpress/block-editor';
+import {
+	useBlockProps,
+	ColorPalette,
+	InspectorControls
+} from '@wordpress/block-editor';
 
 /**
  * The edit function describes the structure of your block in the context of the
@@ -27,8 +31,37 @@ import { useBlockProps } from '@wordpress/block-editor';
  */
 export default function Edit({ attributes, setAttributes }) {
 	const blockProps = useBlockProps();
+
+	const onChangeBGColor = (hexColor) => {
+		setAttributes({ bg_color: hexColor });
+	};
+
+	const onChangeTextColor = (hexColor) => {
+		setAttributes({ text_color: hexColor });
+	};
+
 	return (
 		<div {...blockProps}>
+			<InspectorControls key="setting">
+				<div id="gutenpride-controls">
+					<fieldset>
+						<legend className="blocks-base-control__label">
+							Background color
+						</legend>
+						<ColorPalette // Element Tag for Gutenberg standard colour selector
+							onChange={onChangeBGColor} // onChange event callback
+						/>
+					</fieldset>
+					<fieldset>
+						<legend className="blocks-base-control__label">
+							Text color
+						</legend>
+						<ColorPalette // Element Tag for Gutenberg standard colour selector
+							onChange={onChangeTextColor} // onChange event callback
+						/>
+					</fieldset>
+				</div>
+			</InspectorControls>
 			<div class="box">
 				<TextControl value={attributes.message} onChange={(val) => setAttributes({ message: val })} />
 				<a><TextControl value={attributes.buttonText} onChange={(val) => setAttributes({ buttonText: val })} /></a>

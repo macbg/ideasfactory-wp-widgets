@@ -19,8 +19,8 @@ import './editor.scss';
 /**
  * Internal dependencies
  */
-import Edit from './edit';
-import save from './save';
+import joinUsBannerEdit from './join-us-banner/edit';
+import joinUsBannerSave from './join-us-banner/save';
 
 /**
  * Every block starts by registering a new block type definition.
@@ -40,9 +40,9 @@ registerBlockType('ideas-factory/join-us-banner', {
 	/**
 	 * @see ./edit.js
 	 */
-	edit: Edit,
+	edit: joinUsBannerEdit,
 	/**
 	 * @see ./save.js
 	 */
-	save,
+	save: joinUsBannerSave,
 });

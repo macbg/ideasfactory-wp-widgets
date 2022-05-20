@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ideas-factory/header",
+	"version": "0.1.0",
+	"title": "Header",
+	"category": "widgets",
+	"icon": "flag",
+	"description": "A header with image background, text area and one button.",
+	"attributes": {
+		"message": {
+			"type": "string",
+			"source": "text",
+			"selector": "div.text-content",
+			"default": "Стани един от нас"
+		},
+		"buttonText": {
+			"type": "string",
+			"source": "text",
+			"selector": "a",
+			"default": "Включи се"
+		},
+		"style": {
+			"type": "object",
+			"default": {
+				"color": {
+					"background": "#f37a56",
+					"text": "#ffffff",
+					"link": "#cb4231"
+				}
+			}
+		}
+	},
+	"supports": {
+		"html": false,
+		"color": {
+			"background": true,
+			"text": true,
+			"link": true
+		}
+	},
+	"textdomain": "ideas-factory",
+	"editorScript": "file:./../index.js",
+	"editorStyle": "file:./../index.css",
+	"style": "file:./../style-index.css"
+}
