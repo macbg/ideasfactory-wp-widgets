@@ -23,11 +23,17 @@ import { useBlockProps } from '@wordpress/block-editor';
 }*/
 export default function save({ attributes }) {
 	const blockProps = useBlockProps.save();
-	//<div class="wp-block-cgb-block-join-us-banner">
 	return (
-		<div {...blockProps}>shmeizer
+		<div {...blockProps}>
 			<div class="box">
-				<div class="text-content">{attributes.message}</div>
+				<div class="text-content">
+					<span class="text-content-1">{attributes.message1}</span>
+					<br></br>
+					<span class="text-content-2">{attributes.message2}</span>
+				</div>
+				<div class="text-content-3">
+					{attributes.message3}
+				</div>
 				<a>{attributes.buttonText}</a>
 			</div>
 		</div>

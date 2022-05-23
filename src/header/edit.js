@@ -42,28 +42,10 @@ export default function Edit({ attributes, setAttributes }) {
 
 	return (
 		<div {...blockProps}>
-			<InspectorControls key="setting">
-				<div id="gutenpride-controls">
-					<fieldset>
-						<legend className="blocks-base-control__label">
-							Background color
-						</legend>
-						<ColorPalette // Element Tag for Gutenberg standard colour selector
-							onChange={onChangeBGColor} // onChange event callback
-						/>
-					</fieldset>
-					<fieldset>
-						<legend className="blocks-base-control__label">
-							Text color
-						</legend>
-						<ColorPalette // Element Tag for Gutenberg standard colour selector
-							onChange={onChangeTextColor} // onChange event callback
-						/>
-					</fieldset>
-				</div>
-			</InspectorControls>
 			<div class="box">
-				<TextControl value={attributes.message} onChange={(val) => setAttributes({ message: val })} />
+				<TextControl value={attributes.message1} onChange={(val) => setAttributes({ message1: val })} />
+				<TextControl value={attributes.message2} onChange={(val) => setAttributes({ message2: val })} />
+				<TextControl value={attributes.message3} onChange={(val) => setAttributes({ message3: val })} />
 				<a><TextControl value={attributes.buttonText} onChange={(val) => setAttributes({ buttonText: val })} /></a>
 			</div>
 		</div>

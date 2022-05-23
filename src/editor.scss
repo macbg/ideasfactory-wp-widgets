@@ -4,25 +4,5 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-ideas-factory-join-us-banner input[type='text'] {
-	color: inherit;
-	background: inherit;
-	border: 0;
-	font-family: Mulish;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 23px;
-	letter-spacing: 0.3px;
-	text-transform: uppercase;
-}
-
-.wp-block-ideas-factory-join-us-banner a input[type='text'] {
-	font-family: Mulish;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 14px;
-	line-height: 18px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	//color: #CB4231;
-}
+@import "header/editor.scss";
+@import "join-us-banner/editor.scss";

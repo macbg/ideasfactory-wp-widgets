@@ -1,0 +1,43 @@
+.wp-block-ideas-factory-header {
+    background: url(../assets/IMG_8631.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    .box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-content {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 56px;
+        /* or 140% */
+        letter-spacing: 0.2px;
+
+        color: #ffffff;
+
+        margin-top: 100px;
+        margin-left: 70px;
+    }
+
+    .text-content-2 {
+        color: #cb4231;
+    }
+
+    .text-content-3 {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        /* or 138% */
+        letter-spacing: 0.2px;
+
+        color: #ffffff;
+
+        margin-left: 70px;
+    }
+}

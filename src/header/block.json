@@ -8,17 +8,29 @@
 	"icon": "flag",
 	"description": "A header with image background, text area and one button.",
 	"attributes": {
-		"message": {
+		"message1": {
 			"type": "string",
 			"source": "text",
-			"selector": "div.text-content",
-			"default": "Стани един от нас"
+			"selector": "div.text-content-1",
+			"default": "Грижим се за връзката между градове и села в България."
+		},
+		"message2": {
+			"type": "string",
+			"source": "text",
+			"selector": "div.text-content-2",
+			"default": "А ти имаш ли идеи?"
+		},
+		"message3": {
+			"type": "string",
+			"source": "text",
+			"selector": "div.text-content-3",
+			"default": "Платформа, свързваща жителина села и градове в солидарна мрежа."
 		},
 		"buttonText": {
 			"type": "string",
 			"source": "text",
 			"selector": "a",
-			"default": "Включи се"
+			"default": "Научи повече"
 		},
 		"style": {
 			"type": "object",
