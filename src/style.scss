@@ -11,5 +11,12 @@
 	font-weight: 700;
 }
 
+// TODO: delete
+.wp-container-8> :where(:not(.alignleft):not(.alignright)) {
+	max-width: 1440px !important;
+}
+
+// delete
+
 @import "header/style.scss";
 @import "join-us-banner/style.scss";
