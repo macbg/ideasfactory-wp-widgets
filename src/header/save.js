@@ -26,15 +26,17 @@ export default function save({ attributes }) {
 	return (
 		<div {...blockProps}>
 			<div class="box">
-				<div class="text-content">
-					<span class="text-content-1">{attributes.message1}</span>
-					<br></br>
-					<span class="text-content-2">{attributes.message2}</span>
+				<div class="slider">
+					<div class="text-content">
+						<span class="text-content-1">{attributes.message1}</span>
+						<br></br>
+						<span class="text-content-2">{attributes.message2}</span>
+					</div>
+					<div class="text-content-3">
+						{attributes.message3}
+					</div>
+					<a>{attributes.buttonText}</a>
 				</div>
-				<div class="text-content-3">
-					{attributes.message3}
-				</div>
-				<a>{attributes.buttonText}</a>
 			</div>
 		</div>
 	);
