@@ -26,7 +26,7 @@ export default function save({ attributes }) {
 	return (
 		<div {...blockProps}>
 			<div class="box">
-				<div class="slider">
+				<div class="shadow-box">
 					<div class="text-content">
 						<span class="text-content-1">{attributes.message1}</span>
 						<br></br>
